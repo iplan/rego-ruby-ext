@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "rego-ruby-ext"
   gem.homepage = "http://github.com/alextk/rego-ruby-ext"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Some basic ruby core classes extensions with tests}
+  gem.description = %Q{Ruby core extensions that are common for all ReGO projects}
   gem.email = "tkachev.alex@gmail.com"
   gem.authors = ["Alex Tkachev"]
   # dependencies defined in Gemfile
@@ -38,8 +38,8 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
+require 'rdoc/task'
+RDoc::Task.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'

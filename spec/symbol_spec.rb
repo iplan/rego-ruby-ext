@@ -1,7 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Time" do
+describe Symbol do
   it "should return false on empty? method call" do
-    Time.now.should_not be_empty
+    :asdf.should_not be_empty
+    'y'.to_sym.should_not be_empty
   end
 end
