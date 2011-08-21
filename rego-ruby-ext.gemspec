@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     "lib/string.rb",
     "lib/symbol.rb",
     "lib/time.rb",
+    "rego-ruby-ext.gemspec",
     "spec/date_spec.rb",
     "spec/enumerable_spec.rb",
     "spec/nil_spec.rb",
