@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rego-ruby-ext}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Tkachev"]
-  s.date = %q{2011-08-21}
+  s.date = %q{2011-09-14}
   s.description = %q{Ruby core extensions that are common for all ReGO projects}
   s.email = %q{tkachev.alex@gmail.com}
   s.extra_rdoc_files = [
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "init.rb",
     "lib/date.rb",
     "lib/enumerable.rb",
+    "lib/hash.rb",
     "lib/nil.rb",
     "lib/numeric.rb",
     "lib/rego-ruby-ext.rb",
@@ -37,6 +38,7 @@ Gem::Specification.new do |s|
     "rego-ruby-ext.gemspec",
     "spec/date_spec.rb",
     "spec/enumerable_spec.rb",
+    "spec/hash_spec.rb",
     "spec/nil_spec.rb",
     "spec/numeric_spec.rb",
     "spec/rego-ruby-ext_spec.rb",
