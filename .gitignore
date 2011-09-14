@@ -9,6 +9,7 @@ Gemfile.lock
 *.log
 
 #---------------------------------------------------------
+
 # rcov generated
 coverage
 
