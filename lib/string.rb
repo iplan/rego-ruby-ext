@@ -21,9 +21,9 @@ class String
   def to_boolean
     s = self.downcase.strip
     if s == 'true'
-      TrueClass
+      true
     elsif s == 'false'
-      FalseClass
+      false
     else
       nil
     end

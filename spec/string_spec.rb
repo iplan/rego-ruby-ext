@@ -29,9 +29,9 @@ describe String do
       " TRuE".to_boolean.should be_true
     end
     it 'should return FalseClass for true strings' do
-      "false".to_boolean.should be_true
-      " false ".to_boolean.should be_true
-      " FALse".to_boolean.should be_true
+      "false".to_boolean.should be_false
+      " false ".to_boolean.should be_false
+      " FALse".to_boolean.should be_false
     end
 
   end
