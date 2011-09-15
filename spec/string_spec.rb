@@ -18,4 +18,22 @@ describe String do
     "var is %{var1}!".interpolate(:var1 => 10).should == "var is 10!"
   end
 
+  describe '#to_boolean' do
+    it 'should return nil for non boolean strings' do
+      "asdf".to_boolean.should be_nil
+      "0".to_boolean.should be_nil
+    end
+    it 'should return TrueClass for true strings' do
+      "true".to_boolean.should be_true
+      " true ".to_boolean.should be_true
+      " TRuE".to_boolean.should be_true
+    end
+    it 'should return FalseClass for true strings' do
+      "false".to_boolean.should be_true
+      " false ".to_boolean.should be_true
+      " FALse".to_boolean.should be_true
+    end
+
+  end
+
 end

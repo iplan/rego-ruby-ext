@@ -17,6 +17,17 @@ class String
     hash
   end
 
+  # converts string to either TrueClass or FalseClass. If converion can't be made, returns nil
+  def to_boolean
+    s = self.downcase.strip
+    if s == 'true'
+      TrueClass
+    elsif s == 'false'
+      FalseClass
+    else
+      nil
+    end
+  end
 
   # matches and replaces placeholders in form of %{foo} or %<foo>
   def interpolate(values_hash = {}, options = {})
