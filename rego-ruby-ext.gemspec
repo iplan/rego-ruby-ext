@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rego-ruby-ext}
-  s.version = "0.0.5"
+  s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Tkachev"]
-  s.date = %q{2011-09-15}
+  s.date = %q{2011-09-20}
   s.description = %q{Ruby core extensions that are common for all ReGO projects}
   s.email = %q{tkachev.alex@gmail.com}
   s.extra_rdoc_files = [
@@ -25,17 +25,17 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "init.rb",
-    "lib/boolean.rb",
-    "lib/date.rb",
-    "lib/enumerable.rb",
-    "lib/hash.rb",
-    "lib/nil.rb",
-    "lib/numeric.rb",
+    "lib/boolean-ext.rb",
+    "lib/date-ext.rb",
+    "lib/enumerable-ext.rb",
+    "lib/hash-ext.rb",
+    "lib/nil-ext.rb",
+    "lib/numeric-ext.rb",
     "lib/rego-ruby-ext.rb",
+    "lib/string-ext.rb",
     "lib/string-interpolation.rb",
-    "lib/string.rb",
-    "lib/symbol.rb",
-    "lib/time.rb",
+    "lib/symbol-ext.rb",
+    "lib/time-ext.rb",
     "rego-ruby-ext.gemspec",
     "spec/boolean_spec.rb",
     "spec/date_spec.rb",
@@ -53,7 +53,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/alextk/rego-ruby-ext}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
+  s.rubygems_version = %q{1.7.2}
   s.summary = %q{Some basic ruby core classes extensions with tests}
 
   if s.respond_to? :specification_version then
